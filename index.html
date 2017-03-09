@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Relion IT</title>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+
+		<link href="https://cdn.jotfor.ms/static/formCss.css?3.3.17745" rel="stylesheet" type="text/css" />
+		<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.17745" />
+		<link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.17745" />
+		<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?"/>
+
+		<link href="css/master.css" rel="stylesheet">
+
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+
+
+		<!--<script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>-->
+		<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.17745" type="text/javascript"></script>
+		<script type="text/javascript"> JotForm.init(function(){ JotForm.setCustomHint( 'input_7', 'MESSAGE' ); setTimeout(function() { $('input_3').hint('FULL NAME'); }, 20); setTimeout(function() { $('input_5').hint('PHONE'); }, 20); setTimeout(function() { $('input_4').hint('EMAIL'); }, 20); setTimeout(function() { $('input_6').hint('COMPANY'); }, 20); JotForm.alterTexts({"alphabetic":"This field can only contain letters","alphanumeric":"This field can only contain letters and numbers.","ccDonationMinLimitError":"Minimum amount is {minAmount} {currency}","ccInvalidCVC":"CVC number is invalid.","ccInvalidExpireDate":"Expire date is invalid.","ccInvalidNumber":"Credit Card Number is invalid.","ccMissingDetails":"Please fill up the Credit Card details.","ccMissingDonation":"Please enter numeric values for donation amount.","ccMissingProduct":"Please select at least one product.","characterLimitError":"Too many Characters. The limit is","characterMinLimitError":"Too few characters. The minimum is","confirmClearForm":"Are you sure you want to clear the form?","confirmEmail":"E-mail does not match","currency":"This field can only contain currency values.","cyrillic":"This field can only contain cyrillic characters","dateInvalid":"This date is not valid. The date format is {format}","dateInvalidSeparate":"This date is not valid. Enter a valid {element}.","dateLimited":"This date is unavailable.","disallowDecimals":"Please enter a whole number.","email":"Enter a valid e-mail address","fillMask":"Field value must fill mask.","freeEmailError":"Free email accounts are not allowed","generalError":"There are errors on the form. Please fix them before continuing.","generalPageError":"There are errors on this page. Please fix them before continuing.","gradingScoreError":"Score total should only be less than or equal to","incompleteFields":"There are incomplete required fields. Please complete them.","inputCarretErrorA":"Input should not be less than the minimum value:","inputCarretErrorB":"Input should not be greater than the maximum value:","lessThan":"Your score should be less than or equal to","maxDigitsError":"The maximum digits allowed is","maxSelectionsError":"The maximum number of selections allowed is","minSelectionsError":"The minimum required number of selections is","multipleFileUploads_emptyError":"{file} is empty, please select files again without it.","multipleFileUploads_fileLimitError":"Only {fileLimit} file uploads allowed.","multipleFileUploads_minSizeError":"{file} is too small, minimum file size is {minSizeLimit}.","multipleFileUploads_onLeave":"The files are being uploaded, if you leave now the upload will be cancelled.","multipleFileUploads_sizeError":"{file} is too large, maximum file size is {sizeLimit}.","multipleFileUploads_typeError":"{file} has invalid extension. Only {extensions} are allowed.","numeric":"This field can only contain numeric values","pastDatesDisallowed":"Date must not be in the past.","pleaseWait":"Please wait...","required":"This field is required.","requireEveryCell":"Every cell is required.","requireEveryRow":"Every row is required.","requireOne":"At least one field required.","submissionLimit":"Sorry! Only one entry is allowed. Multiple submissions are disabled for this form.","uploadExtensions":"You can only upload following files:","uploadFilesize":"File size cannot be bigger than:","uploadFilesizemin":"File size cannot be smaller than:","url":"This field can only contain a valid URL","wordLimitError":"Too many words. The limit is","wordMinLimitError":"Too few words. The minimum is"}); JotForm.clearFieldOnHide="disable"; });
+		</script>
+
+
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<style type="text/css"> .form-label-left{ width:150px !important; } .form-line{ padding-top:12px; padding-bottom:12px; } .form-label-right{ width:150px !important; } .form-all{ width:690px; color:#555 !important; font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif; font-size:14px; }
+		</style>
+		<style type="text/css" id="form-designer-style"> /* Injected CSS Code */
+		.form-all { font-family: "Lucida Grande", sans-serif;
+		}
+		.form-all { width: 770px;
+		}
+		.form-label-left,
+		.form-label-right { width: 150px;
+		}
+		.form-label { white-space: normal;
+		}
+		.form-label.form-label-auto { display: inline-block; float: left; text-align: left; width: 150px;
+		}
+		.form-label-left { display: inline-block; white-space: normal; float: left; text-align: left;
+		}
+		.form-label-right { display: inline-block; white-space: normal; float: left; text-align: right;
+		}
+		.form-label-top { white-space: normal; display: block; float: none; text-align: left;
+		}
+		.form-radio-item label:before { top: 0;
+		}
+		.form-all { font-size: 14px;
+		}
+		.form-label { font-weight: bold;
+		}
+		.form-checkbox-item label,
+		.form-radio-item label { font-weight: normal;
+		}
+		.supernova { background-color: #ffffff; background-color: #f5f5f5;
+		}
+		.supernova body { background-color: transparent;
+		}
+		/*
+        @width30: (unit(@formWidth, px) + 60px);
+        @width60: (unit(@formWidth, px)+ 120px);
+        @width90: (unit(@formWidth, px)+ 180px);
+        */
+		/* | */
+		@media screen and (min-width: 480px) { .supernova .form-all { border: 1px solid #dcdcdc; -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1); box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1); }
+		}
+		/* | */
+		/* | */
+		@media screen and (max-width: 480px) { .jotform-form { padding: 10px 0; }
+		}
+		/* | */
+		/* | */
+		@media screen and (min-width: 480px) and (max-width: 768px) { .jotform-form { padding: 30px 0; }
+		}
+		/* | */
+		/* | */
+		@media screen and (min-width: 480px) and (max-width: 689px) { .jotform-form { padding: 30px 0; }
+		}
+		/* | */
+		/* | */
+		@media screen and (min-width: 768px) { .jotform-form { padding: 60px 0; }
+		}
+		/* | */
+		/* | */
+		@media screen and (max-width: 689px) { .jotform-form { padding: 0; }
+		}
+		/* | */
+		.supernova .form-all,
+		.form-all { background-color: #ffffff; border: 1px solid transparent;
+		}
+		.form-header-group { border-color: #e6e6e6;
+		}
+		.form-matrix-table tr { border-color: #e6e6e6;
+		}
+		.form-matrix-table tr:nth-child(2n) { background-color: #f2f2f2;
+		}
+		.form-all { color: #555555;
+		}
+		.form-header-group .form-header { color: #555555;
+		}
+		.form-header-group .form-subHeader { color: #6f6f6f;
+		}
+		.form-sub-label { color: #6f6f6f;
+		}
+		.form-label-top,
+		.form-label-left,
+		.form-label-right,
+		.form-html { color: #555555;
+		}
+		.form-checkbox-item label,
+		.form-radio-item label { color: #6f6f6f;
+		}
+		.form-line.form-line-active { -webkit-transition-property: all; -moz-transition-property: all; -ms-transition-property: all; -o-transition-property: all; transition-property: all; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -ms-transition-duration: 0.3s; -o-transition-duration: 0.3s; transition-duration: 0.3s; -webkit-transition-timing-function: ease; -moz-transition-timing-function: ease; -ms-transition-timing-function: ease; -o-transition-timing-function: ease; transition-timing-function: ease; background-color: #ffffe0;
+		}
+		/* ömer */
+		.form-radio-item,
+		.form-checkbox-item { padding-bottom: 0px !important;
+		}
+		.form-radio-item:last-child,
+		.form-checkbox-item:last-child { padding-bottom: 0;
+		}
+		/* ömer */
+		.form-single-column .form-checkbox-item,
+		.form-single-column .form-radio-item { width: 100%;
+		}
+		.supernova { height: 100%; background-repeat: no-repeat; background-attachment: scroll; background-position: center top; background-repeat: repeat;
+		}
+		.supernova { background-image: none;
+		}
+		#stage { background-image: none;
+		}
+		/* | */
+		.form-all { background-repeat: no-repeat; background-attachment: scroll; background-position: center top; background-repeat: repeat;
+		}
+		.form-header-group { background-repeat: no-repeat; background-attachment: scroll; background-position: center top;
+		}
+		.form-line { margin-top: 12px; margin-bottom: 12px;
+		}
+		.form-line { padding: 12px 36px;
+		}
+		.form-buttons-wrapper { width:100%; }
+		.form-all .qq-upload-button,
+		.form-all .form-submit-button,
+		.form-all .form-submit-reset,
+		.form-all .form-submit-print { font-size: 1em; padding: 9px 15px; font-family: "Lucida Grande", sans-serif; font-size: 14px; font-weight: normal; width: 100%;
+		}
+		.form-all .form-pagebreak-back,
+		.form-all .form-pagebreak-next { font-size: 1em; padding: 9px 15px; font-family: "Lucida Grande", sans-serif; font-size: 14px; font-weight: normal;
+		}
+		/*
+        & when ( @buttonFontType = google ) { @import (css) "@{buttonFontLink}";
+        }
+        */
+		h2.form-header { line-height: 1.618em; font-size: 1.714em;
+		}
+		h2 ~ .form-subHeader { line-height: 1.5em; font-size: 1.071em;
+		}
+		.form-header-group { text-align: left;
+		}
+		/*.form-dropdown,
+        .form-radio-item,
+        .form-checkbox-item,
+        .form-radio-other-input,
+        .form-checkbox-other-input,*/
+		.form-captcha input,
+		.form-spinner input,
+		.form-error-message { padding: 4px 3px 2px 3px;
+		}
+		.form-header-group { font-family: "Lucida Grande", sans-serif;
+		}
+		.form-section { padding: 0px 0px 0px 0px;
+		}
+		.form-header-group { margin: 12px 36px 12px 36px;
+		}
+		.form-header-group { padding: 24px 0px 24px 0px;
+		}
+		.form-textbox,
+		.form-textarea { padding: 4px 3px 2px 3px; width:100%;
+		}
+		.form-textbox,
+		.form-textarea,
+		.form-radio-other-input,
+		.form-checkbox-other-input,
+		.form-captcha input,
+		.form-spinner input { background-color: #ffffff; border-radius: 5px; padding:10px 5px;
+		}
+		[data-type="control_dropdown"] .form-input,
+		[data-type="control_dropdown"] .form-input-wide { width: 150px;
+		}
+		.form-label { font-family: "Lucida Grande", sans-serif;
+		}
+		li[data-type="control_image"] div { text-align: left;
+		}
+		li[data-type="control_image"] img { border: none; border-width: 0px !important; border-style: solid !important; border-color: false !important;
+		}
+		.form-line-column { width: auto;
+		}
+		.form-line-error { overflow: hidden; -webkit-transition-property: none; -moz-transition-property: none; -ms-transition-property: none; -o-transition-property: none; transition-property: none; -webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; -ms-transition-duration: 0.3s; -o-transition-duration: 0.3s; transition-duration: 0.3s; -webkit-transition-timing-function: ease; -moz-transition-timing-function: ease; -ms-transition-timing-function: ease; -o-transition-timing-function: ease; transition-timing-function: ease; background-color: #fff4f4;
+		}
+		.form-line-error .form-error-message { background-color: #ff3200; clear: both; float: none;
+		}
+		.form-line-error .form-error-message .form-error-arrow { border-bottom-color: #ff3200;
+		}
+		.form-line-error input:not(#coupon-input),
+		.form-line-error textarea,
+		.form-line-error .form-validation-error { border: 1px solid #ff3200; -webkit-box-shadow: 0 0 3px #ff3200; -moz-box-shadow: 0 0 3px #ff3200; box-shadow: 0 0 3px #ff3200;
+		}
+		.ie-8 .form-all { margin-top: auto; margin-top: initial;
+		}
+		.ie-8 .form-all:before { display: none;
+		}
+		.form-col-left, .form-col-right {width:50%; display: inline-block; vertical-align: top;}
+		/* | */
+		@media screen and (max-width: 480px), screen and (max-device-width: 768px) and (orientation: portrait), screen and (max-device-width: 415px) and (orientation: landscape) { .defaultThemeTesting123 { visibility: visible; } .asd { white-space: nowrap; } .jotform-form { padding: 12px 0 0 0; } .form-all { border: 0; width: 94% !important; max-width: initial; } .form-sub-label-container { width: 100%; margin: 0; } .form-input { width: 100%; } .form-label { width: 100%!important; } .form-line { padding: 2% 5%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } input[type=text], input[type=email], input[type=tel], textarea { width: 100%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; max-width: initial !important; } .form-input, .form-input-wide, .form-textarea, .form-textbox, .form-dropdown { max-width: initial !important; } div.form-header-group { padding: 24px 0px !important; margin: 0 12px 2% !important; margin-left: 5% !important; margin-right: 5% !important; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } [data-type="control_button"] { margin-bottom: 0 !important; } .form-buttons-wrapper { margin: 0!important; } .form-buttons-wrapper button { width: 100%; } .form-buttons-wrapper .form-submit-print { margin: 0 !important; } table { width: 100%!important; max-width: initial !important; } table td + td { padding-left: 3%; } .form-checkbox-item input, .form-radio-item input { width: auto; } .form-collapse-table { margin: 0 5%; }
+		}
+		/* | */ /*__INSPECT_SEPERATOR__*/
+		.form-label.form-label-top, .form-label.form-label-left { display : none;
+		} input[type="radio"] + label, input[type="checkbox"] + label { margin-left : 25px; float : left; margin-top : -18px;
+		  }
+		.form-line {padding: 5px; margin: 0;}/* Injected CSS Code */
+		</style>
+	</head>
+	<body class="animated-css">
+		<div class="sp-body">
+		<header class="header pageRow paralax skew skew-bottom" style="background-image: url('img/shipping.jpg');">
+			<div class="overlay"></div>
+			<div class="wrapper">
+			<div class="header-outer">
+					<div class="header-inner">
+						<div class="header-top row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a href="#" class="logo"></a></div>
+							<div class="header-phone row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<p>(818) 557-7712 </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-bottom header-v2 row">
+					<div class="col-lg-12">
+						<div class="header-left">
+							<span class="header-subtitle_small whiteTxtColor">Ship More. Pack More.<br>Make More Money.</span>
+							<h1 class="header-title whiteTxtColor">FREE WAREHOUSE<br>EFFICIENCY AUDIT.</h1>
+							<span class="header-subtitle_small_bottom whiteTxtColor">We'll Show Your How To Ship More Orders Per Day!</span>
+							<a href="#" class="ellipseLink text-uppercase customColorLink whiteTxtColor pull-left robotoMedium hvr-pop" data-wow-delay="3.3s">Schedule an Audit</a>
+						</div>
+						<!--<div class="header-right">
+							<img class="wow fadeInRight" data-wow-delay="3.3s" src="media/home/5.png" alt="Phone">
+						</div>-->
+					</div>
+				</div>
+			</div>
+			<div class="skew_appended blueSection"></div>
+		</header>
+		<section id="getForFree" class="pageRowBlue">
+			<div class="wrapper">
+				<div class="row">
+				<div class="col-lg-12">
+					<h1 class="header-title-middle whiteTxtColor">We're More Than Just IT.</h1>
+						<div class="header-right">
+							<img class="wow fadeInRight" data-wow-delay="2.3s" src="img/shipping-clipboard.png" alt="Relion" style="visibility: visible; animation-delay: 2.3s; animation-name: fadeInRight;">
+						</div>
+						<div class="header-left">
+							<span class="header-subtitle_para whiteTxtColor">We are your Warehouse Efficiency masterminds in finding small, overlooked ways to improve your warehouse operations to maximize efficiency using the power of technology. </span>
+							<span class="header-subtitle_para whiteTxtColor">Our Guarantee: Schedule a FREE 2-Hour Onsite Audit & we’ll show you exactly how you can ship more orders per day with simple adjustments that have a huge impact on the bottom-line.</span>
+						</div>
+
+					</div>
+				</div>
+			</div>			
+		</section>
+		<section id="amazingFeatures" class="pageRow skew skew-top whiteSection">
+			<div class="wrapper">
+				<div class="row">
+					<div class="col-lg-12">
+						<h3 class="sectionTitle-top text-center black">Get A Document Road Map To Make Your Warehouse More Efficient</h3>
+						<ul class="featuresList pull-left col-lg-12">
+							<li class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+								<div class="feature-item text-center clearfix">
+									<div class="circle bigCircle center-block">
+										<span><i class="fa fa-check customColor"></i></span>
+									</div>
+									<div class="text-box">
+										<span class="feature-item_title text-uppercase text-center col-lg-12 col-md-12 col-sm-12 col-xs-12 blackTxtColor">THE HOLES IN YOUR EFFICIENCY</span>
+										<span class="feature-item_desc col-lg-12 col-md-12 col-sm-12 col-xs-12">Pinpoint areas where you’re
+										losing time & money</span>
+									</div>
+								</div>
+							</li>
+							<li class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+								<div class="feature-item text-center clearfix">
+									<div class="circle bigCircle center-block">
+										<span><i class="fa fa-check customColor"></i></span>
+									</div>
+									<div class="text-box">
+										<span class="feature-item_title text-uppercase text-center col-lg-12 col-md-12 col-sm-12 col-xs-12 blackTxtColor">PRINTERS, BARCODES & LABELERS</span>
+										<span class="feature-item_desc col-lg-12 col-md-12 col-sm-12 col-xs-12">Find out what you’re doing wrong with barcodes, labelers & printers</span>
+									</div>
+								</div>
+							</li>
+							<li class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+								<div class="feature-item text-center clearfix">
+									<div class="circle bigCircle center-block">
+										<span><i class="fa fa-check customColor"></i></span>
+									</div>
+									<div class="text-box">
+										<span class="feature-item_title text-uppercase text-center col-lg-12 col-md-12 col-sm-12 col-xs-12 blackTxtColor">ACCESS POINTS MASTERY</span>
+										<span class="feature-item_desc col-lg-12 col-md-12 col-sm-12 col-xs-12">Understand the setbacks & inefficiencies of your current Access Points (AP)</span>
+									</div>
+								</div>
+							</li>
+							<li class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
+								<div class="feature-item text-center clearfix">
+									<div class="circle bigCircle center-block">
+										<span><i class="fa fa-check customColor"></i></span>
+									</div>
+									<div class="text-box">
+										<span class="feature-item_title text-uppercase text-center col-lg-12 col-md-12 col-sm-12 col-xs-12 blackTxtColor">HEAT MAPS FOR LOGISTICS ROUTING</span>
+										<span class="feature-item_desc col-lg-12 col-md-12 col-sm-12 col-xs-12">Learn how logistics & tracking  routes can be drastically improved </span>
+									</div>
+								</div>
+							</li>
+							<li class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
+								<div class="feature-item text-center clearfix">
+									<div class="circle bigCircle center-block">
+										<span><i class="fa fa-check customColor"></i></span>
+									</div>
+									<div class="text-box">
+										<span class="feature-item_title text-uppercase text-center col-lg-12 col-md-12 col-sm-12 col-xs-12 blackTxtColor">PROCESS TO BE AUTOMATED</span>
+										<span class="feature-item_desc col-lg-12 col-md-12 col-sm-12 col-xs-12">Automate your existing manual processes</span>
+									</div>
+								</div>
+							</li>			
+							<li class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
+								<div class="feature-item text-center clearfix">
+									<div class="circle bigCircle center-block">
+										<span><i class="fa fa-check customColor"></i></span>
+									</div>
+									<div class="text-box">
+										<span class="feature-item_title text-uppercase text-center col-lg-12 col-md-12 col-sm-12 col-xs-12 blackTxtColor">SAVING STAFF TIME</span>
+										<span class="feature-item_desc col-lg-12 col-md-12 col-sm-12 col-xs-12">Reduce your staff time on repetitive tasks</span>
+									</div>
+								</div>
+							</li>			
+							<li class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
+								<div class="feature-item text-center clearfix">
+									<div class="circle bigCircle center-block">
+										<span><i class="fa fa-check customColor"></i></span>
+									</div>
+									<div class="text-box">
+										<span class="feature-item_title text-uppercase text-center col-lg-12 col-md-12 col-sm-12 col-xs-12 blackTxtColor">TIPS TO KEEP DATA SAFE</span>
+										<span class="feature-item_desc col-lg-12 col-md-12 col-sm-12 col-xs-12">Security! Make sure your important data is backed up properly & secure.</span>
+									</div>
+								</div>
+							</li>			
+							<li class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
+								<div class="feature-item text-center clearfix">
+									<div class="circle bigCircle center-block">
+										<span><i class="fa fa-check customColor"></i></span>
+									</div>
+									<div class="text-box">
+										<span class="feature-item_title text-uppercase text-center col-lg-12 col-md-12 col-sm-12 col-xs-12 blackTxtColor">A DOCUMENTED GUIDE</span>
+										<span class="feature-item_desc col-lg-12 col-md-12 col-sm-12 col-xs-12">You will receive a documnted guidebook on how to improve operations & efficiency. </span>
+									</div>
+								</div>
+							</li>			
+							<li class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInRight;">
+								<div class="feature-item text-center clearfix">
+									<div class="circle bigCircle center-block">
+										<span><i class="fa fa-check customColor"></i></span>
+									</div>
+									<div class="text-box">
+										<span class="feature-item_title text-uppercase text-center col-lg-12 col-md-12 col-sm-12 col-xs-12 blackTxtColor">100% GUARANTEE</span>
+										<span class="feature-item_desc col-lg-12 col-md-12 col-sm-12 col-xs-12">We guarantee our audit will show you at least 3 ways to significantly ship more orders per day! </span>
+									</div>
+								</div>
+							</li>									
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="skew_prepended blueSection"></div>
+		</section>
+		<section id="reviews" class="pageRow full-width-slider-controls paralax skew skew-top customBgColor trianglifyBox">
+			<div class="wrapper">
+				<div class="reviewsContainer row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 clearfix staticBox">
+						<div class="bottom-bracket whiteTxtColor circleBox center-block text-center"><i class="fa fa-quote-right"></i></div>
+						<h3 class="reviews-title whiteTxtColor raleway text-center reviewsArrow">CUSTOMER TESTIMONIALS</h3>
+						<span class="reviews-subtitle robotoLight whiteTxtColor text-center">Read What Our Happy Customers Are Saying</span>
+						<div id="owl-reviews" class="owl-carousel white-control review-full-width staticBox">
+							<div class="review-item">
+								<div class="review-slide">
+									<div class="review-slide_text whiteTxtColor robotoItalic text-center">Eleifend morbi orci velit porttitor sed imperdiet ac ullamcorper Fusce eget tortor vel magna iaculis convallis. Aeneaneros vitae metus pellentesque tincidunt.Cum sociis natoque penatibus et magnis dis parturient montes turpis donec tincidunt tellus.</div>
+									<div class="review-slide_autor center-block">
+										<div class="review-slide_autor-ava circleBox wow rotateIn" data-wow-delay="0.3s">
+											<img src="media/54x54/1.jpg" alt="User Ava">
+										</div>
+										<div class="review-slide_autor-name whiteTxtColor robotoCondensed">Oscar Mendis</div>
+										<div class="review-slide_autor-post whiteTxtColor roboto">Director: BoxApp Media Inc.</div>										
+									</div>
+								</div>
+							</div>
+							<div class="review-item">
+								<div class="review-slide">
+									<div class="review-slide_text whiteTxtColor robotoItalic text-center">Eleifend morbi orci velit porttitor sed imperdiet ac ullamcorper Fusce eget tortor vel magna iaculis convallis. Aeneaneros vitae metus pellentesque tincidunt.Cum sociis natoque penatibus et magnis dis parturient montes turpis donec tincidunt tellus.</div>
+									<div class="review-slide_autor center-block">
+										<div class="review-slide_autor-ava circleBox wow rotateIn" data-wow-delay="0.3s">
+											<img src="media/54x54/1.jpg" alt="User Ava">
+										</div>
+										<div class="review-slide_autor-name whiteTxtColor robotoCondensed">Oscar Mendis</div>
+										<div class="review-slide_autor-post whiteTxtColor roboto">Director: BoxApp Media Inc.</div>										
+									</div>
+								</div>
+							</div>
+							<div class="review-item">
+								<div class="review-slide">
+									<div class="review-slide_text whiteTxtColor robotoItalic text-center">Eleifend morbi orci velit porttitor sed imperdiet ac ullamcorper Fusce eget tortor vel magna iaculis convallis. Aeneaneros vitae metus pellentesque tincidunt.Cum sociis natoque penatibus et magnis dis parturient montes turpis donec tincidunt tellus.</div>
+									<div class="review-slide_autor center-block">
+										<div class="review-slide_autor-ava circleBox wow rotateIn" data-wow-delay="0.3s">
+											<img src="media/54x54/1.jpg" alt="User Ava">
+										</div>
+										<div class="review-slide_autor-name whiteTxtColor robotoCondensed">Oscar Mendis</div>
+										<div class="review-slide_autor-post whiteTxtColor roboto">Director: BoxApp Media Inc.</div>										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="skew_prepended whiteSection"></div>
+		</section>
+		<section id="support" class="pageRow skew skew-top">
+			<div class="wrapper">
+				<div class="supportBox row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 clearfix">
+						<h1 class="sectionTitle text-center">SIGN UP TODAY</h1>
+						
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 clearfix">
+							<div class="support-formbox clearfix wow fadeInRight" data-wow-delay="0.3s">
+								<div id="success"></div>
+								<form>
+									<form class="jotform-form" action="https://submit.jotform.us/submit/70647469683168/" method="post" name="form_70647469683168" id="70647469683168" accept-charset="utf-8">
+										<input type="hidden" name="formID" value="70647469683168" />
+										<div class="form-all">
+											<ul class="form-section page-section">
+												<li class="form-line" data-type="control_radio" id="id_8">
+													<label class="form-label form-label-left form-label-auto" id="label_8" for="input_8"> Select Box
+													</label>
+													<div id="cid_8" class="form-input jf-required">
+														<div class="form-single-column" data-component="radio">
+															<span class="form-radio-item" style="clear:left;">
+															<span class="dragger-item">
+															</span>
+															<input type="radio" class="form-radio" id="input_8_0" name="q8_selectBox" value="Yes, I would like Relion IT to advise me on how I can pick, pack &amp; ship orders faster utilizing the valuable information gained from a FREE 2-Hour Onsite Audit." />
+															<label id="label_input_8_0" for="input_8_0"> Yes, I would like Relion IT to advise me on how I can pick, pack &amp; ship orders faster utilizing the valuable information gained from a FREE 2-Hour Onsite Audit.
+															</label>
+															</span>
+														</div>
+													</div>
+												</li>
+
+												<div class="form-cols">
+
+													<div class="form-col-left">
+														<li class="form-line" data-type="control_textbox" id="id_3">
+															<label class="form-label form-label-top" id="label_3" for="input_3"> Full Name
+															</label>
+															<div id="cid_3" class="form-input-wide jf-required">
+																<input type="text" id="input_3" name="q3_fullName" data-type="input-textbox" class="form-textbox" size="20" value="" placeholder="FULL NAME" data-component="textbox" />
+															</div>
+														</li>
+
+														<li class="form-line" data-type="control_textbox" id="id_5">
+															<label class="form-label form-label-top" id="label_5" for="input_5"> Phone
+															</label>
+															<div id="cid_5" class="form-input-wide jf-required">
+																<input type="text" id="input_5" name="q5_phone" data-type="input-textbox" class="form-textbox" size="20" value="" placeholder="PHONE" data-component="textbox" />
+															</div>
+														</li>
+
+														<li class="form-line" data-type="control_textbox" id="id_4">
+															<label class="form-label form-label-top" id="label_4" for="input_4"> Email
+															</label>
+															<div id="cid_4" class="form-input-wide jf-required">
+																<input type="text" id="input_4" name="q4_email" data-type="input-textbox" class="form-textbox" size="20" value="" placeholder="EMAIL" data-component="textbox" />
+															</div>
+														</li>
+
+														<li class="form-line" data-type="control_textbox" id="id_6">
+															<label class="form-label form-label-top" id="label_6" for="input_6"> Company
+															</label>
+															<div id="cid_6" class="form-input-wide jf-required">
+																<input type="text" id="input_6" name="q6_company" data-type="input-textbox" class="form-textbox" size="20" value="" placeholder="COMPANY" data-component="textbox" />
+															</div>
+														</li>
+
+													</div><div class="form-col-right">
+													<li class="form-line" data-type="control_textarea" id="id_7">
+														<label class="form-label form-label-top" id="label_7" for="input_7"> Message
+														</label>
+														<div id="cid_7" class="form-input-wide jf-required">
+    <textarea id="input_7" class="form-textarea" name="q7_message" cols="40" rows="6" placeholder="MESSAGE" data-component="textarea">
+    </textarea>
+														</div>
+													</li>
+													<li class="form-line" data-type="control_button" id="id_2">
+														<div id="cid_2" class="form-input-wide">
+															<div class="form-buttons-wrapper">
+																<button id="input_2" type="submit" class="form-submit-button" data-component="button"> Submit
+																</button>
+															</div>
+														</div>
+													</li>
+												</div>
+
+													<li style="display:none"> Should be Empty:
+														<input type="text" name="website" value="" />
+													</li>
+
+											</ul>
+										</div>
+										<input type="hidden" id="simple_spc" name="simple_spc" value="70647469683168" />
+										<script type="text/javascript"> document.getElementById("si" + "mple" + "_spc").value = "70647469683168-70647469683168";
+										</script>
+									</form>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="skew_prepended blueSection"></div>
+		</section>		
+		<footer id="footer" class="pageRow skew skew-top">
+			<a id="scrollTop" href="#" class="goToTop whiteTxtColor"><i class="fa fa-angle-up"></i></a>
+			<div class="pageRow">
+				<div class="wrapper">
+
+				</div>
+			</div>
+			<div class="pageRow footerBottom">
+				<div class="wrapper">
+					<div class="footerV2Box row">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 clearfix">
+							<div class="copyrightV2Txt robotoLight whiteTxtColor wow bounceIn pull-left" data-wow-delay="0.3s">Copyright &copy; 2017. Designed by Infinite Communications</div>
+						</div>
+						<!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 clearfix">
+							<ul class="socialmenu wow bounceIn pull-right" data-wow-delay="0.5s">
+								<li><a href="#" target="_blank" class="hvr-pop"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#" target="_blank" class="hvr-pop"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#" target="_blank" class="hvr-pop"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="#" target="_blank" class="hvr-pop"><i class="fa fa-pinterest-p"></i></a></li>
+								<li><a href="#" target="_blank" class="hvr-pop"><i class="fa fa-behance"></i></a></li>
+								<li><a href="#" target="_blank" class="hvr-pop"><i class="fa fa-dribbble"></i></a></li>
+							</ul>
+						</div>-->
+					</div>
+				</div>
+			</div>
+			<div class="skew_prepended whiteSection"></div>
+		</footer>
+		</div>
+		
+		<script src="js/jquery.placeholder.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/smoothscroll.min.js"></script>
+		<!-- Loader -->
+		<script src="plugins/loader/js/classie.js"></script>
+		<script src="plugins/loader/js/pathLoader.js"></script>
+		<script src="plugins/loader/js/main.js"></script>
+		<script src="js/classie.js"></script>
+		<!--Owl Carousel-->
+	    <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+        <!--Contact form--> 
+        <script src="plugins/contact/jqBootstrapValidation.js"></script> 
+        <script src="plugins/contact/contact_me.js"></script>
+		<!--THEME--> 
+		<script src="js/wow.min.js"></script>
+		<script src="js/cssua.min.js"></script>
+        <script src="js/func.js"></script>
+		<!--JOTFORM-->
+		<script type="text/javascript">JotForm.ownerView=true;</script>
+	</body>
+</html>
